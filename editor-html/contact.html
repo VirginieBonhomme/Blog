@@ -155,16 +155,9 @@
                                 
                                 <!-- SOCIAL -->
                                 <ul class="social">
-                                    <li><a class="facebook" href="#"></a></li>
-                                    <li><a class="twitter" href="#"></a></li>
-                                    <li><a class="linkedin" href="#"></a></li>
-                                    <li><a class="google-plus" href="#"></a></li>
-                                    <li><a class="pinterest" href="#"></a></li>
-                                    <li><a class="github" href="#"></a></li>
-                                    <li><a class="dribbble" href="#"></a></li>
-                                    <li><a class="instagram" href="#"></a></li>
-                                    <li><a class="lastfm" href="#"></a></li>
-                                    <li><a class="vine" href="#"></a></li>
+                                  <li><a class="twitter" href="https://x.com/artisttodev"></a></li>
+                                  <li><a class="linkedin" href="https://www.linkedin.com/in/virginie-bonhomme/"></a></li>
+                                  <li><a class="github" href="https://github.com/VirginieBonhomme"></a></li>
                                     <!--<li><a class="rss" href="#"></a></li>
                                     <li><a class="behance" href="#"></a></li>
                                     <li><a class="vimeo" href="#"></a></li>
@@ -194,19 +187,20 @@
                                   <!-- .contact-form -->
                                   <div class="contact-form">
                                     
-                                      <form id="contact-form" class="validate-form" method="post" action="send-mail.php">
+                                      <form id="contact-form" class="validate-form" action="https://formsubmit.co/virginiebonhomme718@gmail.com" method="POST">
                                         
                                         <!-- enter mail subject here -->
-                                        <input type="hidden" name="subject" id="subject" value="You have a new message from Editor!">
-                                        
+                                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                                        <input type="hidden" name="_captcha" value="false">
+
                                         <p>
                                           <label for="name">NAME</label>
-                                          <input type="text" name="name" id="name" class="required">
+                                          <input type="text" id="name" name="name" required>
                                         </p>
                                         
                                         <p>
                                           <label for="email">EMAIL</label>
-                                          <input type="text" name="email" id="email" class="required email">
+                                          <input type="email" id="email" name="email" required>
                                         </p>
                                         
                                         <p class="antispam">Leave this empty if you are a human :
@@ -215,11 +209,11 @@
 
                                         <p>
                                           <label for="message">MESSAGE</label>
-                                          <textarea name="message" id="message" class="required"></textarea>
+                                          <textarea d="message" name="message" required></textarea>
                                         </p>
                                        
                                         <p>
-                                          <button class="submit button"><span class="submit-label">Submit</span><span class="submit-status"></span></button>
+                                          <button type="submit"><span class="submit-label">Submit</span><span class="submit-status"></span></button>
                                         </p>
                                         
                                       </form>
