@@ -146,116 +146,99 @@
                       <header class="entry-header">
                           
                           <!-- entry-title -->
-                          <h1 class="entry-title">Boost Productivity and Spark Creativity with Skill Stack Daily</h1>
+                          <h1 class="entry-title">AWS Cloud Security — Reconnaissance and Mitigation</h1>
                           
                           <!-- entry-meta -->
                           <div class="entry-meta">
                               <span class="entry-date">
-                                  <time class="entry-date" datetime="2025-01-06">Jan. 06, 2025</time>
+                                  <time class="entry-date" datetime="2025-01-14">Jan. 14, 2025</time>
                               </span>
                               <span class="cat-links">
-                                  <a href="#" title="View all posts in Productivity" rel="category tag">Productivity</a>
+                                  <a href="#" title="View all posts in Productivity" rel="category tag">Cloud Security</a>
                               </span>
                           </div>
                           <!-- entry-meta -->
    <!-- .featured-image -->
    <div class="featured-image">
-    <img src="images/blog/SkillStackDaily.png" alt="blog-image">
-</div>
-<!-- .featured-image -->
-                      </header>
-                      <!-- entry-header -->
-
-                      <!-- entry-content -->
-                      <div class="entry-content">
-                          <p>Over the holiday break, I decided to take a step back from my cybersecurity studies and immerse myself in a creative project that would combine my coding knowledge with my passion for learning and personal growth. The result? <strong>Skill Stack Daily</strong>, a simple yet powerful web app designed to help people stay productive, explore new ideas, and unleash their creativity.</p>
-                          
-                          <h2>Why I Built Skill Stack Daily</h2>
-                          <p>The idea for Skill Stack Daily was born out of a desire to make personal growth accessible and actionable. We often set ambitious goals but get stuck in the weeds of where to start. I wanted to create a tool that would simplify the process, breaking big goals into manageable daily tasks that could be completed in just a few minutes.</p>
-                          <p>Small, consistent actions are the building blocks of meaningful progress. Whether it’s clearing your desktop, learning a new skill, or taking a moment to reflect, these micro-challenges can have a compounding effect on productivity, innovation, and creativity.</p>
-
-                          <h2>What Skill Stack Daily Does</h2>
-                          <p>Skill Stack Daily is a web app with an intuitive and user-friendly design. Here’s what it offers:</p>
-                          <ul>
-                              <li><strong>Choose Your Focus:</strong> Select from three categories to align with your goals for the day: Focus, Innovation, or Creativity.</li>
-                              <li><strong>Generate Quick, Actionable Tasks:</strong> Once you’ve chosen a category, the app generates a micro-challenge that you can complete in just a few minutes. Each task is accompanied by an actionable link or resource to help you get started right away.</li>
-                              <li><strong>Track Your Progress:</strong> Every time you complete a task, you can mark it as finished and watch your history of accomplishments grow.</li>
-                              <li><strong>Get Inspired with Motivational Quotes:</strong> As you complete tasks, the app provides a random motivational quote to keep your spirits high.</li>
-                              <li><strong>Light and Dark Mode:</strong> Whether you’re working in a bright office or enjoying a late-night session, Skill Stack Daily’s light and dark modes ensure a comfortable experience tailored to your environment.</li>
-                          </ul>
-
-                          <h2>How Skill Stack Daily Can Help You</h2>
-                          <p>Skill Stack Daily is more than just a productivity tool; it’s a companion for self-improvement. Here’s how it can make a difference:</p>
-                          <ul>
-                              <li><strong>Build Momentum:</strong> Completing small, actionable tasks helps you create positive momentum throughout your day.</li>
-                              <li><strong>Stay Engaged:</strong> The variety of tasks keeps things interesting and prevents burnout.</li>
-                              <li><strong>Foster Creativity:</strong> By encouraging out-of-the-box thinking, the app helps you tap into your creative potential.</li>
-                              <li><strong>Learn Something New:</strong> With resources and links included in each task, you’re always one click away from learning.</li>
-                          </ul>
-
-                          <h2>What’s Next for Skill Stack Daily?</h2>
-                          <p>As a continuous learner, I’m always looking for ways to improve and expand my projects. For Skill Stack Daily, I’m exploring:</p>
-                          <ul>
-                              <li>Adding personalized task recommendations based on user behavior.</li>
-                              <li>Including gamification features to make progress even more rewarding.</li>
-                              <li>Collaborating with others to bring more categories and tasks to the app.</li>
-                          </ul>
-
-                          <h2>Try Skill Stack Daily</h2>
-                          <p>Ready to give it a try? Visit the app at <a href="http://skillstackdaily.com/" target="_blank">Skill Stack Daily</a> and let me know what you think. Your feedback and ideas will help shape the next iteration of this project.</p>
-
-                          <h2>Final Thoughts</h2>
-                          <p>Skill Stack Daily was a passion project that reminded me of the joy in building tools that empower others. Whether you’re looking to boost productivity, embrace innovation, or reignite your creativity, this app is here to make the journey easier and more enjoyable.</p>
-                          <p>I’d love to hear your thoughts! Share your experiences by emailing me at info@skillstackdaily.com or connect with me on social media. Let’s make 2025 a year of consistent growth, one small step at a time.</p>
-                      </div>
-                      <!-- entry-content -->
-
-                       <!-- .nav-single -->
-                       <nav class="nav-single row">
+    <img src="images/blog/aws3.png" alt="AWS Cloud Security">
+  </div>
+  <!-- .featured-image -->
+                    </header>
+                    <!-- entry-header -->
+  
+                    <!-- entry-content -->
+                    <div class="entry-content">
+                        <p>Uncovering vulnerabilities in cloud environments requires a sharp eye and the right tools. Using AWS and Kali Linux, I tackled a simulated misconfigured AWS setup, exposing weaknesses through advanced reconnaissance techniques and transforming the system into a fortified stronghold with targeted security measures.</p>
+                        
+                        <h2>AWS Environment Setup</h2>
+                        
+                        <h3>EC2 Instance Configuration</h3>
+                        <img src="images/blog/aws1.png" alt="AWS Cloud Security">
+                      
+                        <p>I launched an EC2 instance (Amazon Linux 2) and configured the security group to allow SSH (port 22) and HTTP (port 80) access for testing. This setup exposed the instance to potential vulnerabilities, mimicking real-world cloud misconfigurations.</p>
+  
+                        <h3>S3 Bucket Configuration</h3>
+                        <img src="images/blog/aws2.png" alt="AWS Cloud Security">
+                        
+                        <p>I created an S3 bucket with <strong>Block Public Access</strong> disabled, uploaded a sensitive file named <code>secret-data.txt</code>, and allowed public access to it to simulate a common misconfiguration.</p>
+  
+                        <h2>Reconnaissance with Kali Linux</h2>
+                        
+                       
+                        <h3>nmap Scan Results</h3>
+                        <img src="images/blog/aws3.png" alt="AWS Cloud Security">
+                        <p>Using <code>nmap</code>, I identified open SSH and HTTP ports, demonstrating the risks of exposed services.</p>
+  
+                        <h3>AWS CLI S3 Enumeration</h3>
+                        <img src="images/blog/aws4.png" alt="AWS Cloud Security">
+                        
+                        <p>By leveraging AWS CLI, I enumerated the contents of the misconfigured S3 bucket and confirmed public access to sensitive data.</p>
+  
+                        <h3>Exfiltration of Sensitive Data</h3>
+                        <img src="images/blog/aws5.png" alt="AWS Cloud Security">
+                       
+                        <p>Using AWS CLI, I downloaded <code>secret-data.txt</code>, demonstrating the potential impact of data exposure.</p>
+  
+                        <h2>Mitigation and Security Hardening</h2>
+                        <img src="images/blog/aws6.png" alt="AWS Cloud Security">
+                        <img src="images/blog/aws7.png" alt="AWS Cloud Security">
+                        
+                        <p>To secure the environment, I enabled <strong>Block Public Access</strong> for the S3 bucket and verified restricted access, ensuring unauthorized users were denied access.</p>
+  
+                        <h2>Key Learnings</h2>
+                        <ul>
+                            <li><strong>Cloud Misconfigurations:</strong> Misconfigured resources can lead to significant security risks.</li>
+                            <li><strong>Reconnaissance Techniques:</strong> Tools like <code>nmap</code> and AWS CLI are essential for identifying vulnerabilities.</li>
+                            <li><strong>Mitigation Strategies:</strong> Enabling block public access and implementing proper permissions effectively mitigates risks.</li>
+                            <li><strong>Hands-on Experience:</strong> This project enhanced my skills in identifying, exploiting, and mitigating cloud vulnerabilities.</li>
+                        </ul>
+  
+                        <h2>Conclusion</h2>
+                        <p>This lab reinforced the importance of securing cloud environments against misconfigurations. By addressing vulnerabilities and applying robust security measures, organizations can protect sensitive data and maintain cloud system integrity.</p>
+                    </div>
+                    <!-- entry-content -->
+       <!-- .nav-single -->
+       <nav class="nav-single row">
                                     
-                        <div class="nav-next col-sm-6">
-                          <h4>PREVIOUS POST</h4>
-                          <a href="blog-artworld.html" rel="next">Protecting Art in the Digital Age<span class="meta-nav">→</span></a>
-                      </div> 
-                          
-                          <div class="nav-next col-sm-6">
-                              <h4>NEXT POST</h4>
-                              <a href="blog-aws.html" rel="prev"><span class="meta-nav">←</span> AWS Cloud Security — Reconnaissance and Mitigation</a>
-                          </div> 
-                          
-                      </nav>
-                      <!-- .nav-single -->
-
-                  </article>
-                  <!-- hentry -->
-                        
-                        
-                                                            
-                            
-                             
-                            
-                            
-                            
-                            
-                            
-                            
-               		</div>
-                    <!-- layout-fixed -->
-                
-                
-                	
-                
-                </div>
-                <!-- site-content -->
-                
-            </div>
-            <!-- primary -->    
-        
-        
-        
-        
+        <div class="nav-previous col-sm-6">
+            <h4>PREVIOUS POST</h4>
+            <a href="blog-skillstackdaily.html" rel="next">Boost Productivity and Spark Creativity with Skill Stack Daily<span class="meta-nav">→</span></a>
         </div>
-        <!-- site-main -->
+        
+       <!-- <div class="nav-next col-sm-6">
+            <h4>NEXT POST</h4>
+            <a href="blog-artworld.html" rel="prev"><span class="meta-nav">←</span> Protecting Art in the Digital Age </a>
+        </div>-->
+        
+    </nav>
+    <!-- .nav-single -->
+                 </article>
+                 <!-- hentry -->
+             </div>
+          </div>
+          <!-- site-content -->
+          
+      </div>
         
         
         <!-- site-footer -->
@@ -276,6 +259,7 @@
               
               </div>
             <!-- layout-medium -->
+             
           
           </div>
           <!-- .site-info -->
